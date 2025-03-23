@@ -1,0 +1,12 @@
+# Ignore MLflow runs folder
+mlruns/
+
+# Ignore images folder
+images/
+
+# Ignore any datasets (if in a folder named datasets)
+datasets/
+
+# Ignore any SQLite databases
+*.sqlite
+
