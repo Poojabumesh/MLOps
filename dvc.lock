@@ -1,0 +1,26 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/preprocessing.py
+    deps:
+    - path: data/Mental_Health_Lifestyle_Dataset.csv
+      hash: md5
+      md5: c3265a32a98c50700ee4542f584ed5f6
+      size: 187583
+    - path: src/preprocessing.py
+      hash: md5
+      md5: 712b889eb4944c342bcb7b1ba54d4032
+      size: 2637
+    outs:
+    - path: data/pipeline.pkl
+      hash: md5
+      md5: fd258ed56dad2ca34e3e9a5dbfe60532
+      size: 3231
+    - path: data/processed_test_data.csv
+      hash: md5
+      md5: 364fa222910006095b0032831fccee5d
+      size: 106798
+    - path: data/processed_train_data.csv
+      hash: md5
+      md5: cdae62a0e3a48784ad6b587cd4543713
+      size: 426742

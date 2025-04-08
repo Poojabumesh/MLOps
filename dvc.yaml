@@ -1,0 +1,10 @@
+stages:
+ prepare:
+    cmd: python src/preprocessing.py
+    deps:
+      - data/Mental_Health_Lifestyle_Dataset.csv
+      - src/preprocessing.py
+    outs:
+      - data/pipeline.pkl
+      - data/processed_train_data.csv
+      - data/processed_test_data.csv 

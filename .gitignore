@@ -10,3 +10,7 @@ datasets/
 # Ignore any SQLite databases
 *.sqlite
 
+# Ignore data files (raw)
+/data/*
+!/data/*.dvc
+
