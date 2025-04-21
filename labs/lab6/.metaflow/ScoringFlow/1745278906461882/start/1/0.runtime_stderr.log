@@ -1,0 +1,53 @@
+[MFLOG|0|2025-04-21T23:41:47.357885Z|runtime|b882151a-fc06-4fae-8837-a95dd5f94bc6]<flow ScoringFlow step start> failed:
+[MFLOG|0|2025-04-21T23:41:47.361395Z|runtime|376cb92f-55de-4101-9a21-213ea758267d]    Internal error
+[MFLOG|0|2025-04-21T23:41:47.362543Z|runtime|d01bca5a-fd50-4ebc-a652-8b5a5b95829d]Traceback (most recent call last):
+[MFLOG|0|2025-04-21T23:41:47.362605Z|runtime|12f9d2d0-8780-4635-b1a5-74acf5e1cde3]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/cli.py", line 619, in main
+[MFLOG|0|2025-04-21T23:41:47.362640Z|runtime|602d02ba-f677-4d8c-95da-ae4dac9aab45]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2025-04-21T23:41:47.362674Z|runtime|4f9ac9c5-4709-4f8f-ac99-52698a523dd2]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2025-04-21T23:41:47.362710Z|runtime|7db1f459-cfcb-40e6-99f2-3eb06e999cb4]    return self.main(args, kwargs)
+[MFLOG|0|2025-04-21T23:41:47.462054Z|runtime|d3aed177-1b4c-4e5c-be07-d23b98ac9651]           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-21T23:41:47.462232Z|runtime|d3c4da90-c826-42d3-8c3f-7eddd4b328a8]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2025-04-21T23:41:47.462274Z|runtime|23d11961-cd70-4a83-a174-3bf7deb54a71]    rv = self.invoke(ctx)
+[MFLOG|0|2025-04-21T23:41:47.462302Z|runtime|0e83af4a-4cec-43dd-92b0-56c60eeafb40]         ^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-21T23:41:47.462335Z|runtime|dbb09a79-8e03-4605-93d5-acadedc7c5a0]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/cli_components/utils.py", line 69, in invoke
+[MFLOG|0|2025-04-21T23:41:47.462359Z|runtime|f398b1b4-0ce4-44a5-a86f-4ca4fef547c2]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2025-04-21T23:41:47.462383Z|runtime|053c3ed8-9375-4668-a445-8bcffc06fb80]                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-21T23:41:47.462415Z|runtime|37faf5ae-4aea-4181-9b0e-b73c6e24cdc8]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2025-04-21T23:41:47.462441Z|runtime|e2203e90-86b7-469b-b57f-1c85aa3191a5]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2025-04-21T23:41:47.462468Z|runtime|e41b5137-8c89-43b8-af98-3d6997685203]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-21T23:41:47.462492Z|runtime|e7b9e841-f00a-4b93-847f-eb38b641abf7]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2025-04-21T23:41:47.462520Z|runtime|812e2c93-2f4d-4335-8560-a797828d7c0b]    return callback(args, kwargs)
+[MFLOG|0|2025-04-21T23:41:47.462545Z|runtime|b197fdf4-ba4e-4e75-9088-65fc8871bf2f]           ^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-21T23:41:47.462571Z|runtime|4da169c6-e44d-41ca-b778-7ce2c944c53a]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2025-04-21T23:41:47.462595Z|runtime|b809e8ca-f42f-434d-b721-da268c371f41]    return func(args, kwargs)
+[MFLOG|0|2025-04-21T23:41:47.462620Z|runtime|0d6dfa82-4677-48c5-9de0-5f9fdc192e82]           ^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-21T23:41:47.462643Z|runtime|9a68a616-b647-4414-a1b9-e0298176cc2c]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2025-04-21T23:41:47.462667Z|runtime|596c8997-e310-4eb5-aa09-e27f90d0759a]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2025-04-21T23:41:47.462690Z|runtime|11381d7d-52e7-4948-8e2c-0b9f6512a82b]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-21T23:41:47.462712Z|runtime|5e8c6bbb-1f1b-453c-a88c-f1a0aaa2321b]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/cli_components/step_cmd.py", line 167, in step
+[MFLOG|0|2025-04-21T23:41:47.462733Z|runtime|ba98162e-1dfb-44e0-bad2-f00bf79dd557]    task.run_step(
+[MFLOG|0|2025-04-21T23:41:47.462755Z|runtime|57721c12-ed2f-4138-b072-a39922ad22da]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/task.py", line 672, in run_step
+[MFLOG|0|2025-04-21T23:41:47.462776Z|runtime|c3454ebf-ec86-468b-83c1-1fe636654f08]    self._exec_step_function(step_func)
+[MFLOG|0|2025-04-21T23:41:47.462796Z|runtime|1dbe28ed-1138-451e-afa9-86bc43c3a332]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/metaflow/task.py", line 62, in _exec_step_function
+[MFLOG|0|2025-04-21T23:41:47.462819Z|runtime|63ead6bb-c43f-4cc2-a861-b775f62f7a9e]    step_function()
+[MFLOG|0|2025-04-21T23:41:47.462842Z|runtime|5cbabbd1-50cb-4212-a093-dbcfb5843337]  File "/Users/poojabaraluumesh/MSDS/spring_2/mlops/labs/lab6/ml_workflows_lab/ml_workflows_lab/src/scoringflow.py", line 13, in start
+[MFLOG|0|2025-04-21T23:41:47.462863Z|runtime|d6179c4c-1108-43db-b799-d41cb9efa920]    self.new_df = pd.read_csv(self.input_csv)
+[MFLOG|0|2025-04-21T23:41:47.462887Z|runtime|9bc4ee25-f59c-4390-9987-b404f2fe24fb]                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-21T23:41:47.462908Z|runtime|21ce46ea-c47b-4d51-b907-64b2cd3122a3]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+[MFLOG|0|2025-04-21T23:41:47.462929Z|runtime|e7fbae98-900c-48d6-919f-13fd76bd6fee]    return _read(filepath_or_buffer, kwds)
+[MFLOG|0|2025-04-21T23:41:47.462949Z|runtime|d24af515-ddb9-4e34-9fbe-a5c8be3a2a62]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-21T23:41:47.462970Z|runtime|7c8a71fa-a22b-4f5f-a632-9b0f4e328536]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+[MFLOG|0|2025-04-21T23:41:47.462992Z|runtime|eae53988-06ae-43e5-951e-58d654e4b084]    parser = TextFileReader(filepath_or_buffer, kwds)
+[MFLOG|0|2025-04-21T23:41:47.463017Z|runtime|21631956-09a9-4234-94b6-3e16e9601cbb]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-21T23:41:47.463039Z|runtime|a8c5ba6a-fe04-4b28-a4c0-ac5a6a64d2de]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+[MFLOG|0|2025-04-21T23:41:47.463060Z|runtime|e3cc91ab-40e2-4996-aac6-92e653278b37]    self._engine = self._make_engine(f, self.engine)
+[MFLOG|0|2025-04-21T23:41:47.463080Z|runtime|2d4ebc3f-262c-4120-8c3a-eb870cf0381a]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2025-04-21T23:41:47.463099Z|runtime|d47ecd9c-efac-49e0-8531-105c5c90549c]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+[MFLOG|0|2025-04-21T23:41:47.463120Z|runtime|38ee999b-5456-487a-ac22-3e9672e638c7]    self.handles = get_handle(
+[MFLOG|0|2025-04-21T23:41:47.463153Z|runtime|207a08aa-ec3e-46a9-a8bb-962d2e9a7d6d]                   ^^^^^^^^^^^
+[MFLOG|0|2025-04-21T23:41:47.463174Z|runtime|f83328d7-86d6-488e-bd83-7bb524b2a99a]  File "/opt/anaconda3/envs/mlops/lib/python3.12/site-packages/pandas/io/common.py", line 873, in get_handle
+[MFLOG|0|2025-04-21T23:41:47.463193Z|runtime|a405cbdb-a9c0-4da1-94bc-9efce16fe101]    handle = open(
+[MFLOG|0|2025-04-21T23:41:47.463215Z|runtime|dbbd3471-6f88-4fc3-941c-860b46d7c935]             ^^^^^
+[MFLOG|0|2025-04-21T23:41:47.463236Z|runtime|e92e4137-8558-4cbd-8db1-444ac79eed53]FileNotFoundError: [Errno 2] No such file or directory: 'data/new_wine.csv'
+[MFLOG|0|2025-04-21T23:41:47.463259Z|runtime|cd651574-1645-468b-b477-8c1686894522]
+[MFLOG|0|2025-04-21T23:41:47.463697Z|runtime|75bce578-c406-44cf-9128-84c72433e1cd]Task failed.

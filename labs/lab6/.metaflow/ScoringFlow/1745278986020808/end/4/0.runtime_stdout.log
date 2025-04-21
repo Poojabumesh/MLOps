@@ -1,0 +1,9 @@
+[MFLOG|0|2025-04-21T23:43:10.735242Z|runtime|513d5047-7438-4d86-b4cd-0098b48b2f81]   alcohol  malic_acid   ash  ...  od280/od315_of_diluted_wines  proline  prediction
+[MFLOG|0|2025-04-21T23:43:10.736340Z|runtime|ab832023-c81a-48b3-8a55-3053e626ffeb]0    13.64        3.10  2.56  ...                          3.36    845.0           0
+[MFLOG|0|2025-04-21T23:43:10.736396Z|runtime|538c3cf8-6598-4d93-be9a-fd81dde8aa39]1    14.21        4.04  2.44  ...                          3.33   1080.0           0
+[MFLOG|0|2025-04-21T23:43:10.736429Z|runtime|efb2374b-719e-457e-8e9b-6eda262b6f02]2    12.93        2.81  2.70  ...                          2.31    600.0           2
+[MFLOG|0|2025-04-21T23:43:10.736461Z|runtime|d2bb8165-e77d-4662-a3c4-792990587640]3    13.73        1.50  2.70  ...                          2.71   1285.0           0
+[MFLOG|0|2025-04-21T23:43:10.736497Z|runtime|e520e2db-a226-4394-a70f-426efd492e92]4    12.37        1.17  1.92  ...                          3.48    510.0           1
+[MFLOG|0|2025-04-21T23:43:10.736523Z|runtime|bf2eaa25-e1af-41a1-bc01-22ee3a22fa48]
+[MFLOG|0|2025-04-21T23:43:10.736551Z|runtime|d5dd7aa5-24b1-40f5-b940-34831bf67a44][5 rows x 14 columns]
+[MFLOG|0|2025-04-21T23:43:10.736577Z|runtime|8445022d-46eb-4d87-a134-52dd77c64361]Scoring complete, saved to scored_output.csv

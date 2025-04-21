@@ -1,0 +1,1 @@
+{"flow_id": "ClassifierTrainFlow", "run_number": "1745202189442051", "step_name": "choose_model", "task_id": "4", "field_name": "ds-root", "type": "ds-root", "value": "/Users/poojabaraluumesh/MSDS/spring_2/mlops/labs/lab6/.metaflow", "tags": ["attempt_id:0"], "user_name": "poojabaraluumesh", "ts_epoch": 1745202191414}
