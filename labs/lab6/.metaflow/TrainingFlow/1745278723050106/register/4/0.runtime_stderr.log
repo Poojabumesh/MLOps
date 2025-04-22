@@ -1,4 +1,0 @@
-[MFLOG|0|2025-04-21T23:38:49.227376Z|runtime|44eb8be9-6e02-4d81-810a-7b7ebc635c3d]2025/04/21 16:38:49 INFO mlflow.tracking.fluent: Experiment with name 'metaflow-wine' does not exist. Creating a new experiment.
-[MFLOG|0|2025-04-21T23:38:51.497285Z|runtime|dc62e9ba-a404-4738-a6f3-a0c969f0b5bf]Successfully registered model 'WineRF'.
-[MFLOG|0|2025-04-21T23:38:51.499775Z|runtime|333c4b46-39a1-4c17-9e6e-77ba3e4640f7]Created version '1' of model 'WineRF'.
-[MFLOG|0|2025-04-21T23:38:51.499901Z|runtime|ff88d5fc-0b47-4320-902a-8629cfd4c78e]2025/04/21 16:38:51 WARNING mlflow.models.model: Input example should be provided to infer model signature if the model signature is not provided when logging the model.
