@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reddit-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: reddit
+  template:
+    metadata:
+      labels:
+        app: reddit
+    spec:
+      containers:
+      - name: reddit-container
+        image: gcr.io/pooja-lab8-2025/reddit-app:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8000
+#        resources:
+#          requests:
+#            cpu:    "100m"
+#            memory: "256Mi"
+#          limits:
+#            cpu:    "200m"
+#            memory: "512Mi"
+
+#        image: reddit-app:latest    # same tag you’ll build below
+#        imagePullPolicy: IfNotPresent
+#        ports:
+#         - containerPort: 8000
+#        env:
+#         - name: ENV
+#           value: "production"
